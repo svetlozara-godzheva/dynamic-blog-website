@@ -1,0 +1,23 @@
+.posts-list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.post-item-title {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: var(--palette-5);
+    text-decoration: none;
+}
+
+.post-item-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

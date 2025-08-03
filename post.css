@@ -1,0 +1,12 @@
+.post-input-title {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.post-input-content {
+    margin-top: 10px;
+    min-height: 250px;
+    font-size: 20px;
+    field-sizing: content;
+    resize: vertical;
+}

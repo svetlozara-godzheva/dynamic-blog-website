@@ -1,0 +1,69 @@
+:root {
+    --background-color: #eeeeee;
+    --palette-1: #c6c3be;
+    --palette-2: #9c9389;
+    --palette-3: #554336;
+    --palette-4: #957648;
+    --palette-5: hsl(17.37deg 33.93% 21.96%);
+    --font-family: 'Playfair Display', 'DM Sans';
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--palette-5);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    margin: 0px;
+    font-size: 100px;
+}
+
+.navigation {
+    text-align: right;
+
+}
+
+.action {
+    text-decoration: none;
+    color: var(--palette-5);
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.action:hover {
+    color: var(--palette-5);
+    font-weight: bold;
+}
+
+.textbox {
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    color: var(--palette-5);
+    font-family: var(--font-family);
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
