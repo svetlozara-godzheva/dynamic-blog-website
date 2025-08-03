@@ -14,3 +14,8 @@ title.innerHTML = post.title;
 
 let content = document.getElementById("content");
 content.innerHTML = post.content;
+
+let editButton = document.getElementById("edit-btn");
+editButton.addEventListener("click", () => {
+    window.location.href = `post.html?id=${postId}`;
+});
