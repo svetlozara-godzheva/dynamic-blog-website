@@ -46,10 +46,19 @@ saveButton.addEventListener("click", () => {
         localStorage.setItem("posts", JSON.stringify(posts));
         window.location.href = `preview.html?id=${postId}`;
     } else {
+
+        let options = {
+            month: "2-digit",
+            day: "2-digit",
+            year: "numeric"
+        };
+        let formattedDate = new Date().toLocaleDateString("en-US", options);
+
         let post = {
             id: crypto.randomUUID(),
             title: titleName.value,
-            content: content.value
+            content: content.value,
+            date: formattedDate
         }
         posts.push(post);
 
