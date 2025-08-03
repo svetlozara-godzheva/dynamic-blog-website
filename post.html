@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="post.css">
         <script defer src="script.js"></script>
+        <script defer src="post.js"></script>
         <title>Blogue</title>
     </head>
 
@@ -27,15 +28,18 @@
         </div>
         <div class="container">
             <div class="row">
-                <input placeholder="Your blog post title goes here" type="text" class="post-input-title textbox">
+                <input type="text" class="post-input-title textbox" id="title"
+                    placeholder="Your blog post title goes here">
             </div>
             <div class="row">
-                <textarea placeholder="Your blog post content goes here..." class="post-input-content textbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus, lectus ut condimentum feugiat, metus sapien semper ante, et condimentum sem mi eu dui. Suspendisse placerat massa vitae commodo vulputate. In tincidunt neque vitae mattis luctus. Phasellus egestas tellus eget quam dapibus mattis. Maecenas blandit velit neque. Aliquam at feugiat dolor, a lacinia sem. Morbi in ante ut ex sagittis ultrices. Phasellus lectus magna, finibus et dignissim a, faucibus id neque. Nulla vitae dui vel nibh sodales euismod. Pellentesque dictum enim sed quam tristique, vel iaculis orci luctus. Donec blandit, elit in rutrum faucibus, turpis enim efficitur augue, sed dictum ipsum mi vitae felis. Sed eu venenatis ante. Vivamus vel nibh metus. Fusce viverra tortor nibh, at pharetra turpis iaculis vitae. Quisque tempor gravida commodo. Pellentesque molestie libero at scelerisque efficitur.
+                <textarea class="post-input-content textbox" id="content"
+                    placeholder="Your blog post content goes here...">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus, lectus ut condimentum feugiat, metus sapien semper ante, et condimentum sem mi eu dui. Suspendisse placerat massa vitae commodo vulputate. In tincidunt neque vitae mattis luctus. Phasellus egestas tellus eget quam dapibus mattis. Maecenas blandit velit neque. Aliquam at feugiat dolor, a lacinia sem. Morbi in ante ut ex sagittis ultrices. Phasellus lectus magna, finibus et dignissim a, faucibus id neque. Nulla vitae dui vel nibh sodales euismod. Pellentesque dictum enim sed quam tristique, vel iaculis orci luctus. Donec blandit, elit in rutrum faucibus, turpis enim efficitur augue, sed dictum ipsum mi vitae felis. Sed eu venenatis ante. Vivamus vel nibh metus. Fusce viverra tortor nibh, at pharetra turpis iaculis vitae. Quisque tempor gravida commodo. Pellentesque molestie libero at scelerisque efficitur.
                 </textarea>
             </div>
             <div class="row actions">
-                <a class="action" href="preview.html">Save</a>
-                <a class="action">Delete</a>
+                <a class="action" id="save-btn">Save</a>
+                <a class="action" id="delete-btn">Delete</a>
             </div>
         </div>
 
