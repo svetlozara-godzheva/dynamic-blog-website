@@ -26,9 +26,26 @@ body {
     padding-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+
+    .row {
+        max-width: 768px;
+    }
+}
+
 .title {
     margin: 0px;
     font-size: 100px;
+    color: var(--palette-5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title:hover {
+    cursor: pointer;
 }
 
 .navigation {
