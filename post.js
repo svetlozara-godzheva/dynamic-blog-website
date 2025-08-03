@@ -4,6 +4,8 @@ let titleName = document.getElementById("title");
 let content = document.getElementById("content");
 let saveButton = document.getElementById("save-btn");
 
+let deleteButton = document.getElementById("delete-btn");
+
 let urlParams = new URLSearchParams(window.location.search);
 let postId = urlParams.get("id");
 if (postId) {
@@ -15,6 +17,8 @@ if (postId) {
 
     titleName.value = post.title;
     content.value = post.content;
+
+    deleteButton.classList.remove("hidden");
 }
 
 
@@ -52,5 +56,14 @@ saveButton.addEventListener("click", () => {
         localStorage.setItem("posts", JSON.stringify(posts));
         window.location.href = `preview.html?id=${post.id}`;
     }
+});
 
+deleteButton.addEventListener("click", () => {
+    let posts = getPosts();
+    let result = posts.filter((post) => {
+        return post.id != postId;
+    });
+
+    localStorage.setItem("posts", JSON.stringify(result));
+    window.location.href = `index.html`;
 });
