@@ -40,17 +40,18 @@ body {
 
 .navigation {
     text-align: right;
-    text-transform: uppercase;
+
 }
 
-.navigation a {
+.action {
     text-decoration: none;
     color: var(--palette-5);
     font-size: 20px;
-
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.navigation a:hover {
+.action:hover {
     color: var(--palette-5);
     font-weight: bold;
 }
@@ -76,4 +77,39 @@ body {
 .post-item-title:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.title-input {
+
+    margin-top: 10px;
+    font-size: 25px;
+
+}
+
+.textbox {
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    color: var(--palette-5);
+    font-family: var(--font-family);
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.post-textarea {
+
+    margin-top: 10px;
+    min-height: 250px;
+    font-size: 20px;
+    field-sizing: content;
+    resize: vertical;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
