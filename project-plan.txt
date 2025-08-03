@@ -1,0 +1,7 @@
+1. Create a project structure:
+- index.html for the homepage that lists all blog posts
+- post.html that creates, edits and deletes posts
+- preview.html that shows a post with a link that sends you to the post.html page to edit it
+2. Create a basic layout for the pages with html and css.
+3. Add JavaScript to dynamically load and create content.
+4. Add additional css stylings as needed.
