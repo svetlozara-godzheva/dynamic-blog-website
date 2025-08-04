@@ -13,7 +13,8 @@ let title = document.getElementById("title");
 title.innerHTML = post.title;
 
 let content = document.getElementById("content");
-content.innerHTML = post.content;
+let converter = new showdown.Converter();
+content.innerHTML = converter.makeHtml(post.content);
 
 let editButton = document.getElementById("edit-btn");
 editButton.addEventListener("click", () => {
