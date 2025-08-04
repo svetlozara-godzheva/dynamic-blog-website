@@ -1,6 +1,12 @@
 .post-input-title {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.post-input-title::placeholder {
+    font-size: 35px;
+    font-weight: 100;
 }
 
 .invalid::placeholder {
